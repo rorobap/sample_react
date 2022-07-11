@@ -14,14 +14,6 @@ const styledButton = {
 };
 
 
-
-const whichButton = (props) => {
-  if(props.type == 'eraseAll')
-  return "reset"
-  if(props.type == 'submit')
-  return "submit"
-}
-
   return (
 
     <input type={props.type == 'eraseAll' ? 'reset' : 'submit'} style={styledButton} value={props.text}/>
