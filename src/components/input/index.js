@@ -59,7 +59,7 @@ function Input(props) {
   return (
     <div>
     <label>{props.label}</label><br/>
-    <input name={props.name} style={styledInput} onBlur={(e)=> checkNamesAndColors((e.target.value))} id={props.id} type="text"></input><br/>
+    <input name={props.name} placeholder={props.placeholder} style={styledInput} onBlur={(e)=> checkNamesAndColors((e.target.value))} id={props.id} type="text"></input><br/>
     <div style={styledErrorLabel}>{error ? 'Please use valid characters only' : ''}</div>
     </div>
   );

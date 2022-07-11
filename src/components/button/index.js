@@ -1,5 +1,4 @@
 
-import React, { useState } from 'react';
 
 function Button(props) {
 
@@ -14,7 +13,7 @@ const styledButton = {
   cursor: 'pointer'
 };
 
-const [error, setError] = useState(false);
+
 
 const whichButton = (props) => {
   if(props.type == 'eraseAll')
@@ -25,7 +24,7 @@ const whichButton = (props) => {
 
   return (
 
-    <input type={whichButton == 'eraseAll' ? 'reset' : 'submit'} style={styledButton} value={props.text}/>
+    <input type={props.type == 'eraseAll' ? 'reset' : 'submit'} style={styledButton} value={props.text}/>
 
 
   );
